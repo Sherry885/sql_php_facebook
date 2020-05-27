@@ -1,0 +1,231 @@
+*{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient(135deg, turquoise 20%, #FCF6F5FF 100%);	
+}
+
+h1 {
+	font-family: cursive;
+    font-size: 50px;
+	margin-bottom: 25x;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+}
+
+h2 {
+    font-family: cursive;
+    font-size: 20px;
+	margin-bottom: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+
+h3, p {
+	font-family: sans-serif;
+}
+
+body div {
+    padding: 5%;
+}
+
+/* Nav Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+form {
+    width: 40%;
+    margin: 0px auto;
+    padding: 12px;
+    border: 10px solid steelblue;
+    background-color: cornflowerblue;
+    border-radius:10px 10px 10px 10px;
+}
+
+form input {
+    background-color: rgba(0,0,0,0);
+}
+
+div input, textarea {
+    width: 100%;
+}
+
+/* For login.php */
+.textbox input {
+    margin: 10px 0px 10px 0px;
+    height: 20px;
+    width: 100%;
+    padding: 20px 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: aliceblue;
+}
+
+.button input {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    font-size: 1em;
+    color: black;
+    background-color: cadetblue;
+    border: solid black;
+    border-radius: 5px;
+}
+
+.button input:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.error {
+    width:80%;
+    margin: 5px auto;
+    padding: 10px;
+    border: 3px solid crimson;
+    color: black;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.other-page {
+    padding: 10px;
+}
+
+.container{
+    width: auto;
+}
+
+.tag-container {
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-container .tag {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    cursor: default;
+}
+
+.tag i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.tag-container input {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+}
+
+
+
+/* Cards */
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
