@@ -1,4 +1,5 @@
 # sql_php_facebook
+# comp440 database design
 Description 
 Consider the design of the following database system for managing a social network website: each user is registered with the website with a username, password, first name, last name, and an email. Username and email are unique. Each user is associated with a list of hobbies, selected from the following list: hiking, swimming, calligraphy, bowling, movie, cooking, and dancing. A user can follow a list of other users and can also be followed by another list of users. See https://steemit.com/ for an example.  Moreover, a user can post a blog, modify the blog, and delete it afterward. Given a blog, another user, and only another user can give a comment to the blog, modify the comment, or delete the comment afterward. To ensure the quality of the website, each user can post at most 2 blogs a day, and each user can give at most 3 comments in one day. For each blog, the user who posted the blog cannot give any comment (no self-comment), and another user can give at most one comment. Each blog is identified by a blogid, subject, description, and a list of tags for search purposes. Each comment is identified by a commentid, a sentiment (positive or negative), and a description. 
  
@@ -29,3 +30,18 @@ Part 3: Deadline: 2 weeks – Thursday 04/30 by 2:00 PM Based on part 1 & part 2
 8. Display all the users who posted some comments, but each of them is negative. 
 9. Display those users such that all the blogs they posted so far never received any negative comments. 
 10. List a user pair (A, B) such that they always gave each other positive comments, never negative comments. 
+
+**********************************************************************************
+Test cases for PHP Injection Attack
+
+username: *'
+password: *'
+
+username: '1*
+password: '1*
+
+username: 105 OR 1=1
+password: 
+
+username: " or ""="
+password: " or ""="
